@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "core-js": "^3.24.1",
     "firebase": "^9.9.0",
     "lodash": "^4.17.21",
     "lodash.kebabcase": "^4.1.1",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useContext } from "react";
 import { UserContext } from "../lib/context";
+import Image from "next/image";
 
 // Top Navbar
 export default function Navbar() {
@@ -14,6 +15,21 @@ export default function Navbar() {
             <button className="btn-logo">FEED</button>
           </Link>
         </li>
+        <li>
+          <Link href="/create">
+            <button className="btn-logo">CREATE</button>
+          </Link>
+        </li>
+        <li>
+          <Link href="/games">
+            <button className="btn-logo">GAMES</button>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <button className="btn-logo">ABOUT</button>
+          </Link>
+        </li>
         {/* user is signed in and has username*/}
         {username && (
           <>
@@ -24,7 +40,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={`/${username}`}>
-                <img src={user?.photoURL} />
+                <Image src={user?.photoURL} />
               </Link>
             </li>
           </>
@@ -33,7 +49,7 @@ export default function Navbar() {
         {/* user is not signed OR has not created username */}
         {!username && (
           <li>
-            <Link href="enter">
+            <Link href="/enter">
               <button className="btn-blue">Log in</button>
             </Link>
           </li>

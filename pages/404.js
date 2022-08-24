@@ -27,6 +27,7 @@ export default function Custom404() {
           href="https://soundcloud.com/declan-mccue-1"
           title="DecMcCue"
           target="_blank"
+          rel="noreferrer"
         >
           DecMcCue
         </a>{" "}
@@ -35,6 +36,7 @@ export default function Custom404() {
           href="https://soundcloud.com/declan-mccue-1/shrek-remix"
           title="Shrek Remix"
           target="_blank"
+          rel="noreferrer"
         >
           Shrek Remix
         </a>
